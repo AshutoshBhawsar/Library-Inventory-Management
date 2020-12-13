@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1/Library/home.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+   <title>Welcome to K.K.W.I.E.E.R Library !!!</title> 
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Bootstrap --> 
+   
+    <link rel="stylesheet" type="text/css" href="Lib_Assets/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Lib_Assets/demo.css">
+	<link rel="stylesheet" href="Lib_Assets/footer-distributed-with-address-and-phones.css">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+   <script src="Lib_Assets/jquery.js"></script>
+    <script src="Lib_Assets/bootstrap.min.js"></script>
+    <link href="./home_files/style.css" rel="stylesheet" type="text/css">
+
+  	<style type="text/css">
+
+  					.div{
+  						width: auto;
+  						height: 130px;
+  							}
+  						h2{
+
+  								text-align: center;
+      				font-size: 40px;
+      				text-shadow:1px 1px 2px ;
+      				font-family: "Times new roman";
+
+
+  							}
+    
+  				.mar{
+  						margin-top: -30px;
+  						font-size: ;
+  				}
+  				.imgdiv{
+  					margin-top: 20px;
+  				}
+          li:hover{
+            background-color:#404040;
+          }
+          .a{
+            color: black;
+            font-size: 22px;
+            font-family: georgio;
+            background-color:white;
+          }
+          .a:hover{
+            color: black;
+            font-size: 22px;
+            font-family: Times New Roman;
+            background-color:white;
+          }
+
+  	</style>
+  	<script type="text/javascript">
+      $("#bot").click(function(){
+      $("#down").toggle(1000);
+      });
+  	</script>
+  	
+	</head> 
+<body> 
+<!--header-->
+
+<!--bootstrap slider start-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#ffffff"> 
+	<div class="navbar-header"> 
+		<a class="navbar-brand a" href="#">K.K.W.</a> 
+	</div> 
+	<div> 
+		<ul class="nav navbar-nav pull-right"> 
+			<li class="active"><a href="index.php">Home</a></li> 
+			<li><a href="bookdetails.html">Book Details</a></li>
+<!--			<li><a href="gallarys.html">Gallery</a></li>-->
+			<li><a href="login.php">login</a></li>
+			<li><a href="staffdetail.html">About us</a></li>
+      <li><a href=""></a></li>
+			
+		</ul> 
+	</div> 
+</nav><br><br><br>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+        </ol>
+					<div class="carousel-inner">
+            <div class="item">
+                <img alt="First slide" src="Lib_Assets/images/library-books-icon.jpg">
+                <figcaption class="slider-overlay ">
+                    <div class="slider-text animated fadeInDown">
+                        <div class="col-lg-5 col-sm-5 col-md-5">
+                            
+                        </div>
+                        <img alt="" src="Lib_Assets/images/a.png" class="img img-responsive col-lg-2 col-sm-2 col-md-2 hidden-xs">
+                        <br><br>
+                        <h1 style="font-family:Georgia;">K.Ks  NASHIK</h1>
+                        <p>
+                           
+                        </p> 
+                        <h1 style="margin-top: 20px; font-weight: bold;font-family: Times New Roman,Georgia,Serif;">LIBRARY</h1>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="item">
+                <img alt="Second slide" src="Lib_Assets/images/libimg1.jpg">
+                <figcaption class="slider-overlay ">
+                    <div class="slider-text animated fadeInDown">
+                        <div class="col-lg-5 col-sm-5 col-md-5">
+                            
+                        </div>
+                        <img alt="" src="Lib_Assets/images/a1.png" class="img img-responsive col-lg-2 col-sm-2 col-md-2 hidden-xs">
+                        <br><br>
+                        <h1 style="font-family:Georgia;">K.K.W.I.E.E.R NASHIK</h1>
+                        <p>
+                           
+                        </p> 
+                         <h1 style="margin-top: 20px; font-weight: bold;font-family: Times New Roman,Georgia,Serif;">LIBRARY</h1>
+                    </div>
+                </figcaption>
+            </div>
+            <div class="item active">
+                <img alt="Third slide" src="Lib_Assets/images/download1.jpg">
+                    <figcaption class="slider-overlay ">
+                        <div class="slider-text animated fadeInDown">
+                            <div class="col-lg-5 col-sm-5 col-md-5">
+                            
+                            </div>
+                            <img alt="" src="Lib_Assets/images/a1.png" class="img img-responsive col-lg-2 col-sm-2 col-md-2 hidden-xs">
+                            <br><br>
+                            <h1 style="font-family:Georgia;">K.K.W.I.E.E.R NASHIK</h1>
+                            <p>
+                                
+                            </p> 
+                             <h1 style="margin-top: 20px; font-weight: bold;font-family: Times New Roman,Georgia,Serif;">LIBRARY</h1>
+                        </div>
+                    </figcaption>
+            </div>
+        </div>
+        <a class="carousel-control left" href="HOME.htm#carousel-example-generic" data-slide="prev">‹</a> 
+        <a class="carousel-control right" href="HOME.htm#carousel-example-generic" data-slide="next">›</a>
+    </div><br><br><br>
+<!--bootstrap slider end-->
+<!--courses offerde container-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-lg-1"></div>
+    <div class="col-md-8 col-lg-10 ">
+          <h3><b>Library Facilities...</b></h3>
+          <ul>
+            <li class="a">Diffed Staff</li>
+          
+            <li class="a">Easily Add New Student And Staff</li>
+            <li class="a">Easily Add New Books</li>
+            <li class="a">or Student As well As Staff</li>
+            <li class="a">Suggestion Form For Student As Well as Staff</li>
+            <li class="a">Easily Books Availibility</li>
+          </ul>   
+        </div>
+      
+    <div class="col-md-2 col-lg-1"></div>
+  </div>
+</div>
+<br>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3 style="font-size: 27px; margin-left: 20px;">K.K.W.I.E.E.R<span> Nashik</span></h3>
+        <h4 style="font-family: comic sans ms; font-style: italic;font-size: 17px;margin-top:5px;margin-left: -25px; color: gray"><p></p></h4>
+        
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p class="footer-links"  style="font-family: comic sans ms; font-style: italic">
+          Address : <br>K.K.Wagh Education Society,
+Hirabai Haridas Vidanagari,
+Amrutdham,Panchavati</p>
+        </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>0253-2221106</p>
+          
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>ABOUT DEVELOPERS :</span>
+          <ul class="" style="font-family: comic sans ms;list-style: none;color: #ffffff">
+          <li>Students of IF 3rd Year (2017-2018) </li>
+          
+          </ul>
+        </p>
+
+      
+
+      </div>
+
+    </footer>
+</body>
+</html>

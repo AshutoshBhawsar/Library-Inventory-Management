@@ -1,0 +1,232 @@
+<HTML>
+<HEAD>
+    <TITLE>Library->Book suggession</TITLE>
+
+
+	<link rel="stylesheet" type="text/css" href="Lib_Assets\bootstrap.min.css">
+    <link rel="stylesheet" href="Lib_Assets/sb-admin-2.css">
+    <link rel="stylesheet" href="Lib_Assets/demo.css">
+
+  <link rel="stylesheet" href="Lib_Assets/footer-distributed-with-address-and-phones.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	<script src="Lib_Assets/jquery.js"></script>
+    <script src="Lib_Assets/bootstrap.min.js"></script>
+    <script src="Lib_Assets/bootstrap-hover-dropdown.js"></script>
+<style type="text/css">
+	.a{
+font-family: cursive;
+text-shadow:2px 3px 4px ;
+font-size:30 ;
+text-decoration: underline;
+
+	}
+	.b{
+		background-color: ivory;
+		box-shadow: 2px 3px 4px grey;
+		width: 99%;
+		height: 85%;
+	}
+	.b:hover{
+		box-shadow: 3px 4px 8px #323232 ;
+		transition:box-shadow 1s;
+	}
+	.title
+      {
+      	margin-left: 10px;
+        font-size: 40;
+	    text-shadow: 1px 3px 3px #7dfdfe;
+	    font-family: "Times new roman";
+      } 
+      .div{
+      width: auto;
+      height: 160px;
+      }
+
+    .mar{
+      margin-top: -40px;
+      font-size: 40px;
+          }
+
+</style>
+
+</HEAD>
+<body>
+	<div>
+    <div>
+        <img class="pull-left" style="margin-left: 30px;width: 200px; height: 160px; " src="Lib_Assets/images/a.png">
+    </div>
+      <div class="jumbotron div">
+
+        <div class="container">
+      
+          <center><h3 style="color: #348017;font-family:comic sans;"class="mar">K.K.W.I.E.E.R,NASHIK</h3>
+            <p style="margin-top: -10px;font-family:monotype;color:#348017"></p>
+            <h1 style="margin-top: -15px;font-family:CASTE LLAR;text-shadow: 3px 4px 3px green;color: blue;">LIBRARY</h1></center>
+        </div>
+    </div>
+  </div>
+
+  <nav style="margin-top:-30px;"class = "navbar navbar-inverse" role = "navigation">
+   
+   <div style="margin-left:40px;"class = "navbar-header">
+      <a class = "navbar-brand" href = "#"></a>
+   </div>
+   <div>
+    <ul id = "myTab" class = "nav navbar-nav">
+      <li class = "active">
+          <a href = "studHome.php" class = "dropdown-toggle"data-hover="dropdown"> HOME </a>
+      </li>
+
+       <li class="dropdown">
+        <a href="#" id="book"class = "dropdown-toggle" data-toggle = "dropdown"  data-hover="dropdown">
+         BOOK SEARCHING
+          <b class="caret"></b>
+        </a>
+
+        <ul class = "dropdown-menu" role = "menu" aria-labelledby = "book">
+          <li><a href="searching.php">SCHEME BB/SW</a></li>
+          <li><a href="general_book_searching.php">SCHEME GENERAL/WB</a></li>
+        </ul>
+        
+      </li>
+        
+      <li class="dropdown">
+        <a href="feedback.php" id="feedback"class = "dropdown-toggle"data-hover="dropdown">FEEDBACK</a>  
+      </li>         
+      
+      <li class="dropdown">
+        <a href="suggession.php" id="book"class = "dropdown-toggle"data-hover="dropdown">SUGGESTION</a>
+      </li> 
+          
+   </ul>     
+
+         
+  <ul style="margin-right: 40px;"class = "nav navbar-nav navbar-right">
+   
+    <li class="dropdown">
+      <a href="logout.php" id="logout"class = " popover-toggle dropdown-toggle"data-hover="dropdown" title="Please logout Here" data-container = "body" data-toggle="popover" data-placement = "top" 
+      data-content = "Some content in Popover-toggle method">LOGOUT
+      </a>
+
+      </li>
+
+  
+    </ul>
+    </div>  
+  </nav>
+	
+  
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-"></div>
+			<div class="col-lg-9">
+			
+			<div class = "panel panel-success">
+           <div class = "panel-heading">
+              <h2 style="margin-left: 20px; color: ;" class="panel-title title">Book Suggestion</h2><br>
+           </div><br>
+
+           <div class="panel-body">
+				<form method="post" action="suggession_action.php" class="form-horizontal" role="form"> 
+
+				<div class="form-group"> 
+					<label for="name" class="col-sm-2 control-label"> Name :</label> 
+				<div class="col-sm-6"> 
+					<input type="text" class="form-control" name="name" placeholder="Enter Name"required>
+				</div> 
+			</div> 
+
+			 
+
+			<div class="form-group"> 
+				<label for="branch" class="col-sm-2 control-label">Branch :</label> 
+				<div class="col-sm-6"> 
+					<input type="text" class="form-control" name="branch" placeholder="Enter branch"required> 
+				</div> 
+			</div> 
+			
+			<div class="form-group"> 
+				<label for="bookname" class="col-sm-2 control-label">Book Name :</label> 
+				<div class="col-sm-6"> 
+					<input type="text" class="form-control" name="bookname" placeholder="Enter Book Name"> 
+				</div> 
+			</div> 
+			
+			<div class="form-group"> 
+				<label for="author" class="col-sm-2 control-label">Author Name :</label> 
+				<div class="col-sm-6"> 
+					<input type="text" class="form-control" name="author" placeholder="Enter Author Name"> 
+				</div> 
+			</div> 
+
+			<div class="form-group"> 
+				<label for="publication" class="col-sm-2 control-label">Publication :</label> 
+				<div class="col-sm-6"> 
+					<input type="text" class="form-control" name="publication" placeholder="Enter Publication"> 
+				</div> 
+			</div> <br>
+
+			<div class="form-group"> 
+			<div class="col-sm-offset-2 col-sm-10"> 
+				<button type="submit" name="submit" class="btn btn-outline btn-success">Submit</button> 
+			</div> 
+			</div></form>
+			</div><!-- panel body -->
+			</div><!-- panel -->
+			</div>
+			<div class="col-lg-3">
+        <h4><ul type="square"> <li><p class="text-primary text-left">Book Suggession form is <br><br>specially design for to mention<br> <br>the names of books not <br><br>available within Library.</p></li></ul></h4> 
+      </div>
+		</div>
+	</div>
+	
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3 style="font-size: 27px; margin-left: 20px;">K.K.W.I.E.E.R<span> Nashik</span></h3>
+        <h4 style="font-family: comic sans ms; font-style: italic;font-size: 17px;margin-top:5px;margin-left: -25px; color: gray"><p></p></h4>
+        
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p class="footer-links"  style="font-family: comic sans ms; font-style: italic">
+          Address : <br>K.K.Wagh Education Society,
+Hirabai Haridas Vidanagari,
+Amrutdham,Panchavati</p>
+        </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>0253-2221106</p>
+          
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>ABOUT DEVELOPERS :</span>
+          <ul class="" style="font-family: comic sans ms;list-style: none;color: #ffffff">
+          <li>Students of IF 3rd Year (2017-2018) </li>
+          
+          </ul>
+        </p>
+
+      
+
+      </div>
+
+    </footer>>
+
+</body>
+</HTML>

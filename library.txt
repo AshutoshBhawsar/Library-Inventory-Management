@@ -1,0 +1,255 @@
+-- phpMyAdmin SQL Dump
+-- version 4.3.11
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 13, 2017 at 10:16 AM
+-- Server version: 5.6.24
+-- PHP Version: 5.6.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `lib_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `faculty_table`
+--
+
+CREATE TABLE IF NOT EXISTS `faculty_table` (
+  `id` int(11) NOT NULL,
+  `name` varchar(40) NOT NULL,
+  `designation` varchar(40) NOT NULL,
+  `mobile_no` int(11) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `image_name` varchar(40) NOT NULL,
+  `image_path` varchar(40) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `faculty_table`
+--
+
+INSERT INTO `faculty_table` (`id`, `name`, `designation`, `mobile_no`, `email`, `image_name`, `image_path`) VALUES
+(1, 'abc', 'dfhgk', 123445554, 'djfgj@gmail.com', 'k.k2.jpg', 'Pics/');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE IF NOT EXISTS `feedback` (
+  `name` varchar(50) NOT NULL,
+  `emilid` varchar(100) NOT NULL,
+  `branch` varchar(70) NOT NULL,
+  `feedback` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`name`, `emilid`, `branch`, `feedback`) VALUES
+('pooja adke', 'poojaadke@gmail.com', 'it', 'good\r\n'),
+('neeta', 'neeta@gmail.com', 'com', 'nice\r\n'),
+('', '', '', ''),
+('dfg', 'poojaadke@gmail.com', 'kjdf', 'dfhgkjs\r\n\r\n'),
+('dkj', 'poojaadke@gmail.com', 'ut', 'dhfgvj');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `issuebook`
+--
+
+CREATE TABLE IF NOT EXISTS `issuebook` (
+  `memid` int(11) NOT NULL,
+  `bookid` int(11) NOT NULL,
+  `name` varchar(23) NOT NULL,
+  `issueDate` date NOT NULL,
+  `returndate` date NOT NULL,
+  `off_retdate` date NOT NULL,
+  `fine` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `issuebook`
+--
+
+INSERT INTO `issuebook` (`memid`, `bookid`, `name`, `issueDate`, `returndate`, `off_retdate`, `fine`) VALUES
+(1, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(2, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(3, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(4, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(5, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(6, 1, '', '2017-10-10', '2017-10-11', '0000-00-00', 0),
+(7, 1, '', '2017-10-11', '2017-10-11', '2017-11-01', 0),
+(8, 1, '', '2017-10-11', '2017-10-11', '2017-11-01', 0),
+(9, 1, '', '2017-10-11', '2017-10-11', '2017-11-01', 0),
+(10, 1, 'gsdajg', '2017-10-11', '2017-10-11', '2017-11-01', 0),
+(11, 1, 'sdnfh', '2017-10-11', '2017-10-11', '2017-11-01', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `username` varchar(27) DEFAULT NULL,
+  `password` varchar(27) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`username`, `password`) VALUES
+('testuser', 'testuserpass'),
+('67', '67'),
+('87', '87'),
+('45', '45'),
+('testuser1', 'testuserpass1'),
+('test', 'test');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `scheme`
+--
+
+CREATE TABLE IF NOT EXISTS `scheme` (
+  `bookid` int(11) NOT NULL,
+  `Subject` varchar(40) NOT NULL,
+  `Department` varchar(40) NOT NULL,
+  `date` date NOT NULL,
+  `Price` int(11) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Author` varchar(50) NOT NULL,
+  `billno` int(11) NOT NULL,
+  `publication` varchar(50) NOT NULL,
+  `edition` varchar(50) NOT NULL,
+  `volume` int(11) NOT NULL,
+  `pages` int(11) NOT NULL,
+  `pubyear` int(11) NOT NULL,
+  `source` int(11) NOT NULL,
+  `Location` varchar(30) NOT NULL,
+  `classno` int(11) NOT NULL,
+  `bookno` int(11) NOT NULL,
+  `status` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=192 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `scheme`
+--
+
+INSERT INTO `scheme` (`bookid`, `Subject`, `Department`, `date`, `Price`, `Title`, `Author`, `billno`, `publication`, `edition`, `volume`, `pages`, `pubyear`, `source`, `Location`, `classno`, `bookno`, `status`) VALUES
+(1, 'ngj', 'gh', '0007-06-06', 6, 'rnbvm', 'hgj', 67, 'j g', 'jhh', 6, 6, 76, 6, 'hghjl', 0, 7, 0),
+(105, 'os', 'it', '2017-10-10', 500, 'os', 'william stallin', 120, 'tech', '8', 8, 800, 2000, 7, 'nashik', 8, 12, 0),
+(191, 'h', 'hj', '0098-08-08', 78, 'g', 'hjg', 65, 'hjgj', 'hj', 67, 65, 2008, 676, 'hg', 675, 67, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_table`
+--
+
+CREATE TABLE IF NOT EXISTS `student_table` (
+  `name` varchar(30) NOT NULL,
+  `roll_no` int(11) NOT NULL,
+  `branch` varchar(50) NOT NULL,
+  `year` int(11) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `mobile_no` int(11) NOT NULL,
+  `email_id` varchar(50) NOT NULL,
+  `image_name` varchar(50) NOT NULL,
+  `image_path` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student_table`
+--
+
+INSERT INTO `student_table` (`name`, `roll_no`, `branch`, `year`, `address`, `mobile_no`, `email_id`, `image_name`, `image_path`) VALUES
+('kjk', 45, 'it', 7, 'jhk', 47667587, 'jdfg@gmail.com', '', 'Stud_img/');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suggession_table`
+--
+
+CREATE TABLE IF NOT EXISTS `suggession_table` (
+  `name1` varchar(100) NOT NULL,
+  `branchyear` varchar(50) NOT NULL,
+  `bookname` varchar(200) NOT NULL,
+  `author` varchar(200) NOT NULL,
+  `publication` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `suggession_table`
+--
+
+INSERT INTO `suggession_table` (`name1`, `branchyear`, `bookname`, `author`, `publication`) VALUES
+('pooja', 'it', '', '', ''),
+('pooja adke', 'it', 'os', 'william stallin', '12'),
+('snehal', 'it', 'dbms', 'jain', 'techmax'),
+('rvwe', 'vwer', 'wve', 'vwe', 'ver'),
+('mjhbm', 'it', 'kjdfhjd', 'mdfhg', 'jdkhg');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `faculty_table`
+--
+ALTER TABLE `faculty_table`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `issuebook`
+--
+ALTER TABLE `issuebook`
+  ADD PRIMARY KEY (`memid`);
+
+--
+-- Indexes for table `scheme`
+--
+ALTER TABLE `scheme`
+  ADD PRIMARY KEY (`bookid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `faculty_table`
+--
+ALTER TABLE `faculty_table`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `issuebook`
+--
+ALTER TABLE `issuebook`
+  MODIFY `memid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `scheme`
+--
+ALTER TABLE `scheme`
+  MODIFY `bookid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=192;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
